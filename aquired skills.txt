@@ -1,0 +1,51 @@
+selectors
+
+Element selectors: p, h1, div, etc.
+Class selectors: .class-name
+ID selectors: #id-name
+Attribute selectors: [attribute="value"]
+Pseudo-classes: :hover, :active, :focus, etc.
+Pseudo-elements: ::before, ::after
+
+Pseudo-classes selectors
+:hover: Selects an element when the mouse pointer hovers over it.   
+:active: Selects an element while it is being activated by the user (e.g., clicked).   
+:focus: Selects an element that has keyboard focus.
+:first-child: Selects the first child element of its parent.   
+:last-child: Selects the last child element of its parent.   
+:nth-child(n): Selects the nth child element of its parent.   
+:nth-of-type(n): Selects the nth element of its type among its siblings.   
+:link: Selects unvisited links.   
+:visited: Selects visited links.
+   
+Example:
+
+CSS
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+p:first-child {
+  font-weight: bold;
+}
+
+input:focus {
+  border-color: red;
+}
+
+use of google fonts
+use of "get bootstrap.com"
+
+Toggle
+
+Toggle refers to a mechanism that alternates between two states, such as "on" and "off," or "show" and "hide." In programming, toggling is often used to change the state of an element, functionality, or setting, usually in response to user actions like clicking a button.
+
+Example in Context:
+In your JavaScript code:
+
+javascript
+Copy code
+document.querySelector('.hamburger').addEventListener("click", () => {
+    document.querySelector('.sidebar').classList. toggle ('sidebarGo');
+});s
